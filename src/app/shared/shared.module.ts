@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SpeedUnitPipe } from './pipes/speed-unit.pipe';
+import { ToolTipDirective } from './diretives/tool-tip.directive';
 
 
 
 @NgModule({
-  declarations: [SpeedUnitPipe],
+  declarations: [SpeedUnitPipe, ToolTipDirective],
   imports: [
     CommonModule
   ],
   exports: [
-    SpeedUnitPipe
+    SpeedUnitPipe,
+    ToolTipDirective
   ]
 })
 export class SharedModule { }
